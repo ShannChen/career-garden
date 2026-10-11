@@ -4,8 +4,11 @@ Candidate board names are not data connections. Unverified boards never publish
 jobs; empty verified boards are distinguished from missing or mismatched sources.
 """
 import json
+import html
 import re
+import time
 import urllib.error
+import urllib.request
 from pathlib import Path
 
 ROOT=Path(__file__).resolve().parents[1]
@@ -23,16 +26,33 @@ def board_url(provider,board):
     if provider=='ashby':return 'https://jobs.ashbyhq.com/'+board
     return ''
 
-def load_companies():
+def load_companies(prior_sources=None):
     data=json.loads((ROOT/'config/companies.json').read_text())['companies']
     assert len({c['id'] for c in data})==len(data),'Duplicate company IDs'
+    prior={s.get('companyId'):s for s in (prior_sources or []) if s.get('identityVerified') and s.get('board')}
+    for company in data:
+        company['configuredProvider']=company['provider']
+        if company['id'] in prior:
+            source=prior[company['id']]
+            company['provider']=source['provider']
+            company['boards']=list(dict.fromkeys([source['board']]+company['boards']))
     return data
 
-def fetch_company(company,now,get_json,normalize):
+def confirm_board_identity(company,evidence,provider,board):
+    if identity_matches(company,evidence):return True
+    # A public board title can verify a real company even when it has no postings.
+    req=urllib.request.Request(board_url(provider,board),headers={'User-Agent':'CareerGarden/1.0'})
+    with urllib.request.urlopen(req,timeout=15) as response:page=response.read().decode('utf-8','replace')
+    title=re.search(r'<title[^>]*>(.*?)</title>',page,re.S|re.I)
+    return bool(title and identity_matches(company,html.unescape(title.group(1))))
+
+def fetch_company(company,now,get_json,normalize,discover=True,started=None):
+    started=started or time.monotonic()
     key='company:'+company['id'];provider=company['provider']
     base=dict(key=key,name=company['name'],companyId=company['id'],provider=provider,checkedAt=now,portfolio=company.get('portfolio',False))
     failures=[]
     for board in company['boards']:
+        if time.monotonic()-started>60:break
         try:
             if not re.fullmatch(r'[A-Za-z0-9_-]+',board):raise ValueError('Invalid public board name')
             if provider=='greenhouse':
@@ -44,13 +64,13 @@ def fetch_company(company,now,get_json,normalize):
                 rows=get_json(f'https://api.lever.co/v0/postings/{board}?mode=json')
                 if not isinstance(rows,list):raise ValueError('Unexpected board schema')
                 evidence=' '.join(str(r.get('descriptionPlain','')) for r in rows)
-                if not identity_matches(company,evidence):raise ValueError('Company identity not confirmed in public postings')
+                if not confirm_board_identity(company,evidence,provider,board):raise ValueError('Company identity not confirmed in public postings')
                 label=company['name']
             elif provider=='ashby':
                 data=get_json(f'https://api.ashbyhq.com/posting-api/job-board/{board}')
                 rows=data['jobs']
                 evidence=' '.join(str(r.get('descriptionPlain') or r.get('descriptionHtml') or '') for r in rows)
-                if not identity_matches(company,evidence):raise ValueError('Company identity not confirmed in public postings')
+                if not confirm_board_identity(company,evidence,provider,board):raise ValueError('Company identity not confirmed in public postings')
                 label=company['name']
             else:raise ValueError('Unsupported public board provider')
             if not isinstance(rows,list):raise ValueError('Unexpected board schema')
@@ -80,7 +100,20 @@ def fetch_company(company,now,get_json,normalize):
             failures.append('HTTP '+str(exc.code))
         except Exception as exc:
             failures.append(str(exc) if isinstance(exc,ValueError) else type(exc).__name__)
-    return [],dict(base,status='needs_review',identityVerified=False,message='Source not connected: '+ '; '.join(dict.fromkeys(failures)))
+    if discover:
+        # Check public ATS migrations; every response still needs company identity
+        # verification. A successful candidate is preferred on the next daily run.
+        name=company['name'].split(' (')[0]
+        short=re.sub(r'[^a-z0-9]','',name.split()[0].lower())
+        case_name=re.sub(r'[^A-Za-z0-9]','',name)
+        boards=list(dict.fromkeys(company['boards']+[compact(name),case_name,short]))[:5]
+        providers=list(dict.fromkeys([company.get('configuredProvider',provider),'greenhouse','lever','ashby']))
+        for alternative in providers:
+            candidates=[b for b in boards if alternative!=provider or b not in company['boards']]
+            if not candidates or time.monotonic()-started>60:continue
+            jobs,source=fetch_company({**company,'provider':alternative,'boards':candidates},now,get_json,normalize,False,started)
+            if source['status']=='connected':return jobs,source
+    return [],dict(base,status='needs_review',identityVerified=False,message='Public recruiting source could not be verified. Existing records retained; no new jobs published.')
 
 def coverage_directory(statuses,jobs,now):
     groups={}
