@@ -7,7 +7,7 @@ import time
 import urllib.request
 from urllib.parse import urljoin
 
-SCIENCE_TITLE = re.compile(r'scientist|research associate|chemist|analyst|researcher|research engineer', re.I)
+SCIENCE_TITLE = re.compile(r'scientist|research associate|chemist|analyst|researcher|research engineer|biologist|research specialist|protein engineer', re.I)
 
 def request(url, payload=None):
     headers = {'User-Agent':'CareerGarden/1.0','Accept':'application/json,text/html'}
