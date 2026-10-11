@@ -59,7 +59,7 @@ def fetch_workday(source, now, normalize):
         for path, listing in found.items():
             # Sales/operational jobs can mention the keyword but are not scientific roles.
             import re
-            if not re.search(r'scientist|research associate|chemist|analyst|researcher|research engineer', listing.get('title', ''), re.I):
+            if not re.search(r'scientist|research associate|chemist|analyst|researcher|research engineer|biologist|research specialist|protein engineer', listing.get('title', ''), re.I):
                 continue
             try:
                 info = request_json(base + path)['jobPostingInfo']
