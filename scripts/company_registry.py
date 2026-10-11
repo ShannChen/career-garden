@@ -48,7 +48,7 @@ def confirm_board_identity(company,evidence,provider,board):
 
 def fetch_company(company,now,get_json,normalize,discover=True,started=None):
     started=started or time.monotonic()
-    key='company:'+company['id'];provider=company['provider']
+    key=company.get('legacyKey') or 'company:'+company['id'];provider=company['provider']
     base=dict(key=key,name=company['name'],companyId=company['id'],provider=provider,checkedAt=now,portfolio=company.get('portfolio',False))
     failures=[]
     for board in company['boards']:
