@@ -10,20 +10,20 @@ CITIES={
  'MD':['Rockville','Bethesda','Gaithersburg','Frederick'],
  'UT':['Salt Lake City'], 'CO':['Boulder','Denver'],
  'PA':['Philadelphia'], 'NY':['New York City','New York'],
- 'NJ':['Jersey City','Princeton','Rahway'], 'TX':['Austin','Houston'],
+ 'NJ':['Jersey City','Princeton','Rahway','East Hanover'], 'TX':['Austin','Houston'],
  'IN':['Indianapolis'], 'IL':['Chicago'], 'MO':['Kansas City'],
 }
 FOREIGN={'GB':r'United Kingdom|\bUK\b|England|London|Oxford|Cambridge,\s*UK',
          'CA':r'Canada|Vancouver|Toronto|Montreal|British Columbia',
          'CH':r'Switzerland|Basel|Zurich','DE':r'Germany|Munich|Berlin',
-         'FR':r'France|Paris','IN':r'India|Bangalore|Bengaluru|Hyderabad',
+         'FR':r'France|Paris','IN':r'\bIndia\b|Bangalore|Bengaluru|Hyderabad',
          'CN':r'China|Shanghai|Beijing','SG':r'Singapore','JP':r'Japan|Tokyo'}
 
 def annotate_location(job):
     location=str(job.get('location') or job.get('city') or '')
     country=job.get('country')
     # Explicit country and complete state names outrank ambiguous short tokens.
-    explicit_us=bool(re.search(r'United States|\bUSA\b|\bU\.S\.',location,re.I))
+    explicit_us=bool(re.search(r'United States|\bUS(?:A)?\b|\bU\.S\.',location,re.I))
     foreign=[code for code,pattern in FOREIGN.items() if re.search(pattern,location,re.I)]
     full_states=[abbr for name,abbr in STATES.items() if re.search(r'\b'+re.escape(name)+r'\b',location,re.I)]
     if re.search(r'Washington,?\s+DC',location):full_states=[s for s in full_states if s!='WA']
