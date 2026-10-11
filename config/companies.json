@@ -131,6 +131,7 @@
       ],
       "provider": "greenhouse",
       "boards": [
+        "sanabiotech",
         "sanabiotechnology"
       ],
       "portfolio": false
