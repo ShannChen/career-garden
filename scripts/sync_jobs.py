@@ -20,7 +20,6 @@ SOURCES = [
     ('Element Biosciences', 'greenhouse', 'elementbiosciences'),
     ('Lila Sciences', 'greenhouse', 'lila'),
     ('Arrowhead Pharmaceuticals', 'greenhouse', 'arrowheadpharmacareers'),
-    ('Denali Therapeutics', 'greenhouse', 'denalitherapeutics'),
     ('BioAgilytix', 'lever', 'bioagilytix'),
     ('KCAS Bio', 'lever', 'kcasbio'),
     ('Convergent Research', 'lever', 'convergentresearch'),
