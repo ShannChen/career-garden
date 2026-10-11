@@ -4,12 +4,12 @@ import re
 STATES=dict(x.split(':') for x in '''Alabama:AL|Alaska:AK|Arizona:AZ|Arkansas:AR|California:CA|Colorado:CO|Connecticut:CT|Delaware:DE|District of Columbia:DC|Florida:FL|Georgia:GA|Hawaii:HI|Idaho:ID|Illinois:IL|Indiana:IN|Iowa:IA|Kansas:KS|Kentucky:KY|Louisiana:LA|Maine:ME|Maryland:MD|Massachusetts:MA|Michigan:MI|Minnesota:MN|Mississippi:MS|Missouri:MO|Montana:MT|Nebraska:NE|Nevada:NV|New Hampshire:NH|New Jersey:NJ|New Mexico:NM|New York:NY|North Carolina:NC|North Dakota:ND|Ohio:OH|Oklahoma:OK|Oregon:OR|Pennsylvania:PA|Rhode Island:RI|South Carolina:SC|South Dakota:SD|Tennessee:TN|Texas:TX|Utah:UT|Vermont:VT|Virginia:VA|Washington:WA|West Virginia:WV|Wisconsin:WI|Wyoming:WY'''.split('|'))
 CITIES={
  'CA':['South San Francisco','San Francisco','San Diego','Carlsbad','La Jolla','San Rafael','Novato','Foster City','Thousand Oaks','Redwood City','Pasadena','Irvine','San Carlos','Santa Monica','Emeryville','Berkeley','Davis','Sacramento','Millbrae','Hayward','San Mateo','Palo Alto','Menlo Park','Brisbane','Los Angeles','San Jose','Oakland','Mountain View','San Leandro'],
- 'MA':['Boston','Cambridge','Somerville','Watertown','Waltham','Lexington','Worcester','Billerica','Burlington'],
+ 'MA':['Boston','Cambridge','Somerville','Watertown','Waltham','Lexington','Worcester','Billerica','Burlington','Norwood','Marlborough','Framingham'],
  'WA':['Seattle','Bellevue','Redmond'],
  'NC':['Durham','Raleigh','Research Triangle Park'],
  'MD':['Rockville','Bethesda','Gaithersburg','Frederick'],
  'UT':['Salt Lake City'], 'CO':['Boulder','Denver'],
- 'PA':['Philadelphia'], 'NY':['New York City','New York'],
+ 'PA':['Philadelphia'], 'NY':['New York City','New York','Tarrytown','Rensselaer','Sleepy Hollow'],
  'NJ':['Jersey City','Princeton','Rahway','East Hanover'], 'TX':['Austin','Houston'],
  'IN':['Indianapolis'], 'IL':['Chicago'], 'MO':['Kansas City'],
 }
