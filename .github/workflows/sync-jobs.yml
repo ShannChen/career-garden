@@ -5,7 +5,7 @@ on:
     - cron: '17 15 * * *'
   push:
     branches: [main]
-    paths: ['scripts/**', 'index.html', 'app.js', '.github/workflows/sync-jobs.yml']
+    paths: ['config/**', 'scripts/**', 'index.html', 'app.js', '.github/workflows/sync-jobs.yml']
 permissions:
   contents: write
   pages: write
@@ -16,6 +16,7 @@ concurrency:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
         with:
@@ -23,6 +24,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: Verify source and location integrity
+        run: python scripts/check_national_sources.py
       - name: Fetch company boards and authorized feeds
         env:
           LINKEDIN_FEED_URL: ${{ secrets.LINKEDIN_FEED_URL }}
