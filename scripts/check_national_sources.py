@@ -14,7 +14,7 @@ def run():
         return dict(name='Example Bio')
     jobs,source=fetch_company(company,'now',fixture,normalize)
     assert source['board']=='right' and source['status']=='connected' and len(jobs)==1
-    empty,status=fetch_company({**company,'boards':['wrong']},'now',fixture,normalize)
+    empty,status=fetch_company({**company,'boards':['wrong']},'now',fixture,normalize,discover=False)
     assert not empty and status['status']=='needs_review' and not status['identityVerified']
     retained,_=merge(jobs,[(empty,status)],'later')
     assert retained[0]['active'] and retained[0]['stale']
@@ -23,7 +23,7 @@ def run():
     def empty_board(url):return {'jobs':[]} if '/jobs?' in url else {'name':'Example Bio'}
     _,zero=fetch_company({**company,'boards':['right']},'now',empty_board,normalize)
     assert zero['status']=='connected' and zero['matched']==0 and zero['identityVerified']
-    for loc,country,states in [('Cambridge, MA','US',['MA']),('Cambridge, United Kingdom','GB',[]),('Vancouver, Canada','CA',[]),('Washington, DC','US',['DC']),('Unknown','UNKNOWN',[])]:
+    for loc,country,states in [('US, Indianapolis IN','US',['IN']),('Indianapolis','US',['IN']),('Remote - US','US',[]),('Cambridge, MA','US',['MA']),('Cambridge, United Kingdom','GB',[]),('Vancouver, Canada','CA',[]),('Washington, DC','US',['DC']),('Unknown','UNKNOWN',[])]:
         result=annotate_location({'location':loc})
         assert result['country']==country and result['states']==states,loc
     multi=annotate_location({'location':'New York, New York; Salt Lake City, Utah'})
