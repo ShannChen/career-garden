@@ -1,0 +1,57 @@
+name: Sync jobs and publish Career Garden
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */6 * * *'
+  push:
+    branches: [main]
+    paths: ['scripts/**', 'index.html', 'app.js', '.github/workflows/sync-jobs.yml']
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+concurrency:
+  group: career-garden-publish
+  cancel-in-progress: false
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Fetch company boards and authorized feeds
+        env:
+          LINKEDIN_FEED_URL: ${{ secrets.LINKEDIN_FEED_URL }}
+          LINKEDIN_FEED_TOKEN: ${{ secrets.LINKEDIN_FEED_TOKEN }}
+          INDEED_FEED_URL: ${{ secrets.INDEED_FEED_URL }}
+          INDEED_FEED_TOKEN: ${{ secrets.INDEED_FEED_TOKEN }}
+          GLASSDOOR_FEED_URL: ${{ secrets.GLASSDOOR_FEED_URL }}
+          GLASSDOOR_FEED_TOKEN: ${{ secrets.GLASSDOOR_FEED_TOKEN }}
+          HANDSHAKE_FEED_URL: ${{ secrets.HANDSHAKE_FEED_URL }}
+          HANDSHAKE_FEED_TOKEN: ${{ secrets.HANDSHAKE_FEED_TOKEN }}
+        run: python scripts/sync_jobs.py
+      - name: Save synchronized records
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add data/jobs.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Update synchronized job records'
+            git push
+          fi
+      - name: Stage public website
+        run: |
+          mkdir -p public/data
+          cp index.html app.js public/
+          cp data/jobs.json public/data/
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+      - uses: actions/deploy-pages@v4
+        id: deployment
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
