@@ -143,7 +143,7 @@ def merge(old_jobs, batches, now):
     out, urls, statuses = {}, set(), []
     for rows, status in batches:
         statuses.append(status)
-        if status['status'] in ('connected', 'authorization_required'):
+        if status['status'] in ('connected', 'partial', 'authorization_required'):
             for j in rows:
                 prior = old.get(j['id']) or next((x for x in old_jobs if canonical(x['url']) == j['url']), None)
                 if prior:
@@ -157,7 +157,7 @@ def merge(old_jobs, batches, now):
                 for j in old_jobs:
                     if j.get('sourceKey') == status['key'] and j['id'] not in ids:
                         out.setdefault(j['id'], {**j, 'active': False, 'closedAt': j.get('closedAt') or now})
-        if status['status'] == 'error':
+        if status['status'] in ('error', 'partial'):
             for j in old_jobs:
                 if j.get('sourceKey') == status['key'] and j['url'] not in urls:
                     out.setdefault(j['id'], {**j, 'stale': True})
@@ -170,6 +170,9 @@ def main():
     prior = json.loads(path.read_text()) if path.exists() else {'jobs': []}
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         batches = list(pool.map(lambda s: fetch_source(s, now), SOURCES))
+    from workday import SOURCES as WORKDAY_SOURCES, fetch_workday
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+        batches += list(pool.map(lambda s: fetch_workday(s, now, normalize), WORKDAY_SOURCES))
     batches += [partner_source(n, now) for n in PLATFORMS]
     jobs, statuses = merge(prior.get('jobs', []), batches, now)
     path.parent.mkdir(exist_ok=True)
