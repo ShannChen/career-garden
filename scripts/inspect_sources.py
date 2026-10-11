@@ -17,13 +17,14 @@ for name,url in PAGES.items():
   page=text(url)
   scripts=[urljoin(url,x) for x in re.findall(r'<script[^>]+src=["\']([^"\']+)',page,re.I)]
   print(json.dumps({'source':name,'scripts':scripts,'links':re.findall(r'(?:href|src)=["\']([^"\']*(?:greenhouse|ashby|lever|jobvite|Opportunity|JobBoard)[^"\']*)',page,re.I)[:20]}))
-  if name=='ionis':
+  print(json.dumps({'source':name,'page_snippets':[page[max(0,m.start()-100):m.end()+700] for m in list(re.finditer(r'OpportunitySearch|opportunitySearch|LoadSearch|jobBoard|greenhouse|ashby|job-api|apiUrl|jobs-api',page,re.I))[:12]]}))
+  if name in ('ionis','denali'):
    for script in scripts:
-    if not ('ultipro.com' in script and re.search('job|opportun|bundle',script,re.I)):continue
+    if not ('ultipro.com' in script or 'denalitherapeutics.com' in script):continue
     js=text(script)
     snippets=[]
-    for m in re.finditer(r'LoadSearchResults|OpportunitySearch|SearchResults|opportunitySearch|searchOpportunit',js,re.I):
+    for m in re.finditer(r'LoadSearchResults|OpportunitySearch|opportunitySearch|searchOpportunit|greenhouse|ashby|api/|jobBoardUrl|opportunities/search',js,re.I):
      snippets.append(js[max(0,m.start()-200):m.end()+600])
-     if len(snippets)>=10:break
+     if len(snippets)>=16:break
     if snippets:print(json.dumps({'script':script,'snippets':snippets}))
  except Exception as e:print(json.dumps({'source':name,'error':type(e).__name__}))
