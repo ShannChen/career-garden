@@ -1,0 +1,865 @@
+{
+  "generatedAt": "2026-10-11T03:27:54.806305+00:00",
+  "jobs": [
+    {
+      "id": "greenhouse:virbiotechnologyinc:4734252005",
+      "company": "Vir Biotechnology",
+      "title": "Scientist I, Analytical Development - Protein Chemistry (Temporary)",
+      "city": "San Francisco",
+      "state": "CA",
+      "location": "San Francisco, California, United States",
+      "level": "scientist",
+      "fields": [
+        "proteomics",
+        "oligo",
+        "analytical"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": true,
+      "rank": 3,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "Proteomics",
+        "OLIGO",
+        "Analytical"
+      ],
+      "fit": "Keyword overlap: Proteomics, OLIGO, Analytical. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/virbiotechnologyinc/jobs/4734252005",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:virbiotechnologyinc",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-09-16T16:42:20-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:virbiotechnologyinc:4741999005",
+      "company": "Vir Biotechnology",
+      "title": "Scientist II, Bioanalytics ",
+      "city": "San Francisco",
+      "state": "CA",
+      "location": "San Francisco, California, United States",
+      "level": "scientist",
+      "fields": [
+        "analytical",
+        "bioanalysis",
+        "assay"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 3,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "Analytical",
+        "Bioanalysis",
+        "Assay"
+      ],
+      "fit": "Keyword overlap: Analytical, Bioanalysis, Assay. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/virbiotechnologyinc/jobs/4741999005",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:virbiotechnologyinc",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-10-08T12:44:39-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:glyphicbiotechnologies:4258096009",
+      "company": "Glyphic Biotechnologies",
+      "title": "Scientist / Senior Scientist, Assay Integration (Reagents)",
+      "city": "Berkeley",
+      "state": "CA",
+      "location": "Berkeley, CA",
+      "level": "senior",
+      "fields": [
+        "proteomics",
+        "oligo",
+        "analytical",
+        "assay"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 4,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "Proteomics",
+        "OLIGO",
+        "Analytical",
+        "Assay"
+      ],
+      "fit": "Keyword overlap: Proteomics, OLIGO, Analytical, Assay. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/glyphicbiotechnologies/jobs/4258096009",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:glyphicbiotechnologies",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-09-11T22:19:50-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:glyphicbiotechnologies:4258160009",
+      "company": "Glyphic Biotechnologies",
+      "title": "Staff / Senior Scientist, Assay Development (Chemistry)",
+      "city": "Berkeley",
+      "state": "CA",
+      "location": "Berkeley, CA",
+      "level": "senior",
+      "fields": [
+        "oligo",
+        "analytical",
+        "assay"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 3,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "OLIGO",
+        "Analytical",
+        "Assay"
+      ],
+      "fit": "Keyword overlap: OLIGO, Analytical, Assay. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/glyphicbiotechnologies/jobs/4258160009",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:glyphicbiotechnologies",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-05-22T22:16:45-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:glyphicbiotechnologies:4227259009",
+      "company": "Glyphic Biotechnologies",
+      "title": "Staff / Senior Scientist, Bioconjugation Chemistry",
+      "city": "Berkeley",
+      "state": "CA",
+      "location": "Berkeley, CA",
+      "level": "senior",
+      "fields": [
+        "oligo",
+        "analytical",
+        "assay"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 3,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "OLIGO",
+        "Analytical",
+        "Assay"
+      ],
+      "fit": "Keyword overlap: OLIGO, Analytical, Assay. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/glyphicbiotechnologies/jobs/4227259009",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:glyphicbiotechnologies",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-04-20T20:28:08-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:kardigan:5409487008",
+      "company": "Kardigan",
+      "title": "Scientist, Drug Metabolism and Pharmacokinetics (DMPK)",
+      "city": "South San Francisco",
+      "state": "CA",
+      "location": "South San Francisco, California, United States",
+      "level": "scientist",
+      "fields": [
+        "bioanalysis",
+        "assay"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 2,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "Bioanalysis",
+        "Assay"
+      ],
+      "fit": "Keyword overlap: Bioanalysis, Assay. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/kardigan/jobs/5409487008",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:kardigan",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-10-02T12:26:12-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:alnylampharmaceuticals:4400182009",
+      "company": "Alnylam Pharmaceuticals",
+      "title": "Associate Scientist II, Protein Sciences",
+      "city": "United States",
+      "state": "",
+      "location": "United States",
+      "level": "associate",
+      "fields": [
+        "oligo"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 1,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "OLIGO"
+      ],
+      "fit": "Keyword overlap: OLIGO. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/alnylampharmaceuticals/jobs/4400182009",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:alnylampharmaceuticals",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-10-01T06:31:15-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:alnylampharmaceuticals:4421694009",
+      "company": "Alnylam Pharmaceuticals",
+      "title": "Scientist, Biocatalysis & Protein Engineering",
+      "city": "Cambridge",
+      "state": "MA",
+      "location": "Cambridge, MA",
+      "level": "scientist",
+      "fields": [
+        "proteomics",
+        "oligo"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 2,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "Proteomics",
+        "OLIGO"
+      ],
+      "fit": "Keyword overlap: Proteomics, OLIGO. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/alnylampharmaceuticals/jobs/4421694009",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:alnylampharmaceuticals",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-10-01T06:31:15-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:alnylampharmaceuticals:4400030009",
+      "company": "Alnylam Pharmaceuticals",
+      "title": "Scientist, DMPK",
+      "city": "Cambridge",
+      "state": "MA",
+      "location": "Cambridge, MA",
+      "level": "scientist",
+      "fields": [
+        "oligo",
+        "bioanalysis"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 2,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "OLIGO",
+        "Bioanalysis"
+      ],
+      "fit": "Keyword overlap: OLIGO, Bioanalysis. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/alnylampharmaceuticals/jobs/4400030009",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:alnylampharmaceuticals",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-10-01T06:31:15-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:alnylampharmaceuticals:4409749009",
+      "company": "Alnylam Pharmaceuticals",
+      "title": "Senior Associate Scientist, Biology",
+      "city": "Cambridge",
+      "state": "MA",
+      "location": "Cambridge, MA United States",
+      "level": "senior",
+      "fields": [
+        "oligo"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 1,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "OLIGO"
+      ],
+      "fit": "Keyword overlap: OLIGO. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/alnylampharmaceuticals/jobs/4409749009",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:alnylampharmaceuticals",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-10-01T06:31:15-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:praxisprecisionmedicines:5140290008",
+      "company": "Praxis Precision Medicines",
+      "title": "Director, Process Chemistry",
+      "city": "United States - Remote",
+      "state": "",
+      "location": "United States - Remote",
+      "level": "senior",
+      "fields": [
+        "oligo"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 1,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "OLIGO"
+      ],
+      "fit": "Keyword overlap: OLIGO. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/praxisprecisionmedicines/jobs/5140290008",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:praxisprecisionmedicines",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-10-06T14:56:22-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:praxisprecisionmedicines:5060288008",
+      "company": "Praxis Precision Medicines",
+      "title": "Principal Scientist, Analytical Development, Oligo and Small Molecule",
+      "city": "United States - Remote",
+      "state": "",
+      "location": "United States - Remote",
+      "level": "senior",
+      "fields": [
+        "oligo",
+        "analytical"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 2,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "OLIGO",
+        "Analytical"
+      ],
+      "fit": "Keyword overlap: OLIGO, Analytical. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/praxisprecisionmedicines/jobs/5060288008",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:praxisprecisionmedicines",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-10-06T14:52:54-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:praxisprecisionmedicines:5440077008",
+      "company": "Praxis Precision Medicines",
+      "title": "Principal Scientist, Process Chemistry ",
+      "city": "United States - Remote",
+      "state": "",
+      "location": "United States - Remote",
+      "level": "senior",
+      "fields": [
+        "oligo"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 1,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "OLIGO"
+      ],
+      "fit": "Keyword overlap: OLIGO. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/praxisprecisionmedicines/jobs/5440077008",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:praxisprecisionmedicines",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-10-09T10:42:16-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:praxisprecisionmedicines:5441446008",
+      "company": "Praxis Precision Medicines",
+      "title": "Senior Data Scientist, CMC",
+      "city": "United States - Remote",
+      "state": "",
+      "location": "United States - Remote",
+      "level": "senior",
+      "fields": [
+        "oligo",
+        "analytical"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 2,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "OLIGO",
+        "Analytical"
+      ],
+      "fit": "Keyword overlap: OLIGO, Analytical. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/praxisprecisionmedicines/jobs/5441446008",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:praxisprecisionmedicines",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-10-09T09:24:24-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:tesseratherapeutics:5240104007",
+      "company": "Tessera Therapeutics",
+      "title": "Senior Research Associate, Oligonucleotide Chemistry",
+      "city": "Somerville",
+      "state": "",
+      "location": "Somerville, Massachusetts, United States",
+      "level": "senior",
+      "fields": [
+        "oligo"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 1,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "OLIGO"
+      ],
+      "fit": "Keyword overlap: OLIGO. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/tesseratherapeutics/jobs/5240104007",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:tesseratherapeutics",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-09-16T15:08:49-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:elementbiosciences:6139802004",
+      "company": "Element Biosciences",
+      "title": "Scientist, Biochemistry",
+      "city": "San Diego - Headquarters",
+      "state": "",
+      "location": "San Diego - Headquarters",
+      "level": "scientist",
+      "fields": [
+        "proteomics",
+        "assay"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 2,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "Proteomics",
+        "Assay"
+      ],
+      "fit": "Keyword overlap: Proteomics, Assay. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/elementbiosciences/jobs/6139802004",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:elementbiosciences",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-10-02T12:19:45-04:00",
+      "active": true
+    },
+    {
+      "id": "greenhouse:elementbiosciences:5973058004",
+      "company": "Element Biosciences",
+      "title": "Staff Scientist, Surface Chemistry",
+      "city": "San Diego - Headquarters",
+      "state": "",
+      "location": "San Diego - Headquarters",
+      "level": "senior",
+      "fields": [
+        "proteomics",
+        "assay"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 2,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "Proteomics",
+        "Assay"
+      ],
+      "fit": "Keyword overlap: Proteomics, Assay. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://job-boards.greenhouse.io/elementbiosciences/jobs/5973058004",
+      "sourceLabel": "Company careers · Greenhouse",
+      "sourceKey": "greenhouse:elementbiosciences",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": "2026-09-15T17:21:56-04:00",
+      "active": true
+    },
+    {
+      "id": "lever:bioagilytix:8b7cc3db-4c1e-4b18-9913-c1287b39a59f",
+      "company": "BioAgilytix",
+      "title": "Scientist I - LC/MS (Bioanalytical)",
+      "city": "San Diego",
+      "state": "CA",
+      "location": "San Diego, CA",
+      "level": "scientist",
+      "fields": [
+        "oligo",
+        "bioanalysis",
+        "assay"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 6,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "OLIGO",
+        "Bioanalysis",
+        "Assay"
+      ],
+      "fit": "Keyword overlap: OLIGO, Bioanalysis, Assay. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://jobs.lever.co/bioagilytix/8b7cc3db-4c1e-4b18-9913-c1287b39a59f",
+      "sourceLabel": "Company careers · Lever",
+      "sourceKey": "lever:bioagilytix",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": null,
+      "active": true
+    },
+    {
+      "id": "lever:bioagilytix:d1a15375-791f-4632-a0fb-76a3ed0f701b",
+      "company": "BioAgilytix",
+      "title": "Scientist III - LC/MS (Bioanalytical)",
+      "city": "Durham",
+      "state": "NC",
+      "location": "Durham, NC",
+      "level": "scientist",
+      "fields": [
+        "analytical",
+        "bioanalysis",
+        "assay"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 6,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "Analytical",
+        "Bioanalysis",
+        "Assay"
+      ],
+      "fit": "Keyword overlap: Analytical, Bioanalysis, Assay. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://jobs.lever.co/bioagilytix/d1a15375-791f-4632-a0fb-76a3ed0f701b",
+      "sourceLabel": "Company careers · Lever",
+      "sourceKey": "lever:bioagilytix",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": null,
+      "active": true
+    },
+    {
+      "id": "lever:kcasbio:9b2d5b8d-43c0-4c8e-a01b-5bb5f4b00232",
+      "company": "KCAS Bio",
+      "title": "Associate Scientist - Mass Spec Production (LC-MS/MS)",
+      "city": "Kansas City",
+      "state": "",
+      "location": "Kansas City",
+      "level": "associate",
+      "fields": [
+        "bioanalysis"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 4,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "Bioanalysis"
+      ],
+      "fit": "Keyword overlap: Bioanalysis. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://jobs.lever.co/kcasbio/9b2d5b8d-43c0-4c8e-a01b-5bb5f4b00232",
+      "sourceLabel": "Company careers · Lever",
+      "sourceKey": "lever:kcasbio",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": null,
+      "active": true
+    },
+    {
+      "id": "lever:kcasbio:276348df-94c0-4c1b-b7a8-36fd9a1141d7",
+      "company": "KCAS Bio",
+      "title": "Sr. Scientist - Mass Spec Production (LC-MS/MS)",
+      "city": "Kansas City",
+      "state": "",
+      "location": "Kansas City",
+      "level": "senior",
+      "fields": [
+        "bioanalysis"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 4,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "Bioanalysis"
+      ],
+      "fit": "Keyword overlap: Bioanalysis. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://jobs.lever.co/kcasbio/276348df-94c0-4c1b-b7a8-36fd9a1141d7",
+      "sourceLabel": "Company careers · Lever",
+      "sourceKey": "lever:kcasbio",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": null,
+      "active": true
+    },
+    {
+      "id": "lever:convergentresearch:4f822323-514f-4cea-a606-781564b05072",
+      "company": "Convergent Research",
+      "title": "Mass Spectrometry Scientist",
+      "city": "Watertown",
+      "state": "MA",
+      "location": "Watertown, MA",
+      "level": "scientist",
+      "fields": [
+        "proteomics",
+        "bioanalysis"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 5,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "Proteomics",
+        "Bioanalysis"
+      ],
+      "fit": "Keyword overlap: Proteomics, Bioanalysis. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://jobs.lever.co/convergentresearch/4f822323-514f-4cea-a606-781564b05072",
+      "sourceLabel": "Company careers · Lever",
+      "sourceKey": "lever:convergentresearch",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": null,
+      "active": true
+    },
+    {
+      "id": "lever:convergentresearch:82540c08-47ab-457a-bc22-f9abf5e0c427",
+      "company": "Convergent Research",
+      "title": "Neurodegenerative Disease Senior Scientist",
+      "city": "Watertown",
+      "state": "MA",
+      "location": "Watertown, MA",
+      "level": "senior",
+      "fields": [
+        "proteomics"
+      ],
+      "verified": false,
+      "apiVerified": true,
+      "temp": false,
+      "rank": 1,
+      "salary": "See original listing for compensation",
+      "tags": [
+        "Proteomics"
+      ],
+      "fit": "Keyword overlap: Proteomics. Automated relevance screening; qualifications have not been individually reviewed.",
+      "gap": "Confirm required experience, direct MS methods, work authorization, and job level in the full description. RNA biology does not imply oligonucleotide LC-MS experience.",
+      "url": "https://jobs.lever.co/convergentresearch/82540c08-47ab-457a-bc22-f9abf5e0c427",
+      "sourceLabel": "Company careers · Lever",
+      "sourceKey": "lever:convergentresearch",
+      "firstSeen": "2026-10-11T03:27:54.806305+00:00",
+      "lastSeen": "2026-10-11T03:27:54.806305+00:00",
+      "postedAt": null,
+      "updatedAt": null,
+      "active": true
+    }
+  ],
+  "sources": [
+    {
+      "key": "greenhouse:virbiotechnologyinc",
+      "name": "Vir Biotechnology",
+      "provider": "greenhouse",
+      "status": "connected",
+      "checkedAt": "2026-10-11T03:27:54.806305+00:00",
+      "scanned": 18,
+      "matched": 2
+    },
+    {
+      "key": "greenhouse:glyphicbiotechnologies",
+      "name": "Glyphic Biotechnologies",
+      "provider": "greenhouse",
+      "status": "connected",
+      "checkedAt": "2026-10-11T03:27:54.806305+00:00",
+      "scanned": 3,
+      "matched": 3
+    },
+    {
+      "key": "greenhouse:kardigan",
+      "name": "Kardigan",
+      "provider": "greenhouse",
+      "status": "connected",
+      "checkedAt": "2026-10-11T03:27:54.806305+00:00",
+      "scanned": 30,
+      "matched": 1
+    },
+    {
+      "key": "greenhouse:alnylampharmaceuticals",
+      "name": "Alnylam Pharmaceuticals",
+      "provider": "greenhouse",
+      "status": "connected",
+      "checkedAt": "2026-10-11T03:27:54.806305+00:00",
+      "scanned": 117,
+      "matched": 4
+    },
+    {
+      "key": "greenhouse:praxisprecisionmedicines",
+      "name": "Praxis Precision Medicines",
+      "provider": "greenhouse",
+      "status": "connected",
+      "checkedAt": "2026-10-11T03:27:54.806305+00:00",
+      "scanned": 79,
+      "matched": 4
+    },
+    {
+      "key": "greenhouse:tesseratherapeutics",
+      "name": "Tessera Therapeutics",
+      "provider": "greenhouse",
+      "status": "connected",
+      "checkedAt": "2026-10-11T03:27:54.806305+00:00",
+      "scanned": 5,
+      "matched": 1
+    },
+    {
+      "key": "greenhouse:elementbiosciences",
+      "name": "Element Biosciences",
+      "provider": "greenhouse",
+      "status": "connected",
+      "checkedAt": "2026-10-11T03:27:54.806305+00:00",
+      "scanned": 18,
+      "matched": 2
+    },
+    {
+      "key": "greenhouse:lila",
+      "name": "Lila Sciences",
+      "provider": "greenhouse",
+      "status": "error",
+      "checkedAt": "2026-10-11T03:27:54.806305+00:00",
+      "message": "HTTPError: source could not be synchronized"
+    },
+    {
+      "key": "lever:bioagilytix",
+      "name": "BioAgilytix",
+      "provider": "lever",
+      "status": "connected",
+      "checkedAt": "2026-10-11T03:27:54.806305+00:00",
+      "scanned": 18,
+      "matched": 2
+    },
+    {
+      "key": "lever:kcasbio",
+      "name": "KCAS Bio",
+      "provider": "lever",
+      "status": "connected",
+      "checkedAt": "2026-10-11T03:27:54.806305+00:00",
+      "scanned": 10,
+      "matched": 2
+    },
+    {
+      "key": "lever:convergentresearch",
+      "name": "Convergent Research",
+      "provider": "lever",
+      "status": "connected",
+      "checkedAt": "2026-10-11T03:27:54.806305+00:00",
+      "scanned": 26,
+      "matched": 2
+    },
+    {
+      "key": "partner:linkedin",
+      "name": "LinkedIn",
+      "status": "authorization_required",
+      "message": "No authorized job feed configured"
+    },
+    {
+      "key": "partner:indeed",
+      "name": "Indeed",
+      "status": "authorization_required",
+      "message": "No authorized job feed configured"
+    },
+    {
+      "key": "partner:glassdoor",
+      "name": "Glassdoor",
+      "status": "authorization_required",
+      "message": "No authorized job feed configured"
+    },
+    {
+      "key": "partner:handshake",
+      "name": "Handshake",
+      "status": "authorization_required",
+      "message": "No authorized job feed configured"
+    }
+  ]
+}
