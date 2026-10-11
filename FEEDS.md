@@ -1,6 +1,6 @@
 # Data connections
 
-Public company sources: 8 Greenhouse boards and 3 Lever boards, configured in scripts/sync_jobs.py. Synchronization runs every 6 hours through GitHub Actions and can be started manually in Actions. The interface displays per-source success/failure, last scan, active jobs, and first-seen dates. New means first discovered within 7 days, not necessarily newly posted. Missing jobs are marked closed only after a successful scan; failures preserve stale records.
+Public company sources: 8 Greenhouse boards and 3 Lever boards, configured in scripts/sync_jobs.py. Synchronization runs once daily through GitHub Actions and can be started manually in Actions. The interface displays per-source success/failure, last scan, active jobs, and first-seen dates. New means first discovered within 7 days, not necessarily newly posted. Missing jobs are marked closed only after a successful scan; failures preserve stale records.
 
 ## Authorized platform feeds
 
