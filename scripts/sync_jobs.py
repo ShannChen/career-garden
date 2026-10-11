@@ -49,7 +49,7 @@ def classify(title, text):
     content = title + ' ' + text
     fields = [k for k, pattern in PATTERNS.items() if re.search(pattern, content, re.I)]
     # Keep scientific roles only; oligo/RNA roles need an analytical connection.
-    role = re.search(r'scientist|research associate|chemist|analyst|researcher|research engineer', title, re.I)
+    role = re.search(r'scientist|research associate|chemist|analyst|researcher|research engineer|biologist|research specialist|protein engineer', title, re.I)
     related = re.search(MS, content, re.I) or ('oligo' in fields and re.search(r'analyt|chromatograph|characteri|\bHPLC\b', content, re.I))
     if not role or not related:
         return None
@@ -160,7 +160,7 @@ def merge(old_jobs, batches, now):
                 for j in old_jobs:
                     if j.get('sourceKey') == status['key'] and j['id'] not in ids:
                         out.setdefault(j['id'], {**j, 'active': False, 'closedAt': j.get('closedAt') or now})
-        if status['status'] in ('error', 'partial'):
+        if status['status'] in ('error', 'partial', 'needs_review'):
             for j in old_jobs:
                 if j.get('sourceKey') == status['key'] and j['url'] not in urls:
                     out.setdefault(j['id'], {**j, 'stale': True})
@@ -173,6 +173,9 @@ def main():
     prior = json.loads(path.read_text()) if path.exists() else {'jobs': []}
     with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
         batches = list(pool.map(lambda s: fetch_source(s, now), SOURCES))
+    from company_registry import load_companies, fetch_company, coverage_directory
+    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
+        batches += list(pool.map(lambda c: fetch_company(c,now,get_json,normalize),load_companies()))
     from workday import SOURCES as WORKDAY_SOURCES, fetch_workday
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
         batches += list(pool.map(lambda s: fetch_workday(s, now, normalize), WORKDAY_SOURCES))
@@ -181,8 +184,11 @@ def main():
         batches += list(pool.map(lambda f: f(now, normalize), [smartrecruiters, jobvite, ukg]))
     batches += [partner_source(n, now) for n in PLATFORMS]
     jobs, statuses = merge(prior.get('jobs', []), batches, now)
+    from locations import annotate_location
+    jobs=[annotate_location(j) for j in jobs]
     path.parent.mkdir(exist_ok=True)
-    path.write_text(json.dumps(dict(generatedAt=now, jobs=jobs, sources=statuses), ensure_ascii=False, indent=2))
+    coverage=coverage_directory(statuses,jobs,now)
+    path.write_text(json.dumps(dict(generatedAt=now, jobs=jobs, sources=statuses, coverage=coverage), ensure_ascii=False, indent=2))
     print(f'Synchronized {sum(s["status"] == "connected" for s in statuses)} sources; {sum(j["active"] for j in jobs)} active relevant roles')
 
 if __name__ == '__main__':
