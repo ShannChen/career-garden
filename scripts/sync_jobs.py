@@ -50,7 +50,7 @@ def classify(title, text):
     fields = [k for k, pattern in PATTERNS.items() if re.search(pattern, content, re.I)]
     # Keep scientific roles only; oligo/RNA roles need an analytical connection.
     role = re.search(r'scientist|research associate|chemist|analyst|researcher|research engineer|biologist|research specialist|protein engineer', title, re.I)
-    related = re.search(MS, content, re.I) or ('oligo' in fields and re.search(r'analyt|chromatograph|characteri|\bHPLC\b', content, re.I))
+    related = re.search(MS, content, re.I) or ('oligo' in fields and re.search(r'analytical development|analytical characteri|analytical methods?|analytical chemistry|chromatograph|\b[HU]PLC\b|capillary electrophoresis', content, re.I))
     if not role or not related:
         return None
     if re.search(r'principal|staff|director|senior|\bsr\.?\b', title, re.I):
