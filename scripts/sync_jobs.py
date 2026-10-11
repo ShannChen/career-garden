@@ -175,7 +175,7 @@ def main():
         batches = list(pool.map(lambda s: fetch_source(s, now), SOURCES))
     from company_registry import load_companies, fetch_company, coverage_directory
     with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
-        batches += list(pool.map(lambda c: fetch_company(c,now,get_json,normalize),load_companies()))
+        batches += list(pool.map(lambda c: fetch_company(c,now,get_json,normalize),load_companies(prior.get('sources',[]))))
     from workday import SOURCES as WORKDAY_SOURCES, fetch_workday
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
         batches += list(pool.map(lambda s: fetch_workday(s, now, normalize), WORKDAY_SOURCES))
