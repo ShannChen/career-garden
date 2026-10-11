@@ -19,6 +19,8 @@ SOURCES = [
     ('Tessera Therapeutics', 'greenhouse', 'tesseratherapeutics'),
     ('Element Biosciences', 'greenhouse', 'elementbiosciences'),
     ('Lila Sciences', 'greenhouse', 'lila'),
+    ('Arrowhead Pharmaceuticals', 'greenhouse', 'arrowheadpharmacareers'),
+    ('Denali Therapeutics', 'greenhouse', 'denalitherapeutics'),
     ('BioAgilytix', 'lever', 'bioagilytix'),
     ('KCAS Bio', 'lever', 'kcasbio'),
     ('Convergent Research', 'lever', 'convergentresearch'),
@@ -173,6 +175,9 @@ def main():
     from workday import SOURCES as WORKDAY_SOURCES, fetch_workday
     with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
         batches += list(pool.map(lambda s: fetch_workday(s, now, normalize), WORKDAY_SOURCES))
+    from career_sites import smartrecruiters, jobvite
+    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+        batches += list(pool.map(lambda f: f(now, normalize), [smartrecruiters, jobvite]))
     batches += [partner_source(n, now) for n in PLATFORMS]
     jobs, statuses = merge(prior.get('jobs', []), batches, now)
     path.parent.mkdir(exist_ok=True)
