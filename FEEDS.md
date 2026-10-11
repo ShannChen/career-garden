@@ -1,6 +1,23 @@
 # Data connections
 
-Public company sources: 8 Greenhouse boards and 3 Lever boards, configured in scripts/sync_jobs.py, plus Workday public career-search adapters for Amgen, Gilead Sciences, and Eli Lilly in scripts/workday.py. These Workday web endpoints are site-specific rather than a documented partner API; they can change or fail. Connection status is based on each actual synchronization result. Search coverage uses mass spectrometry, proteomics, oligonucleotide, analytical, and bioanalytical queries, rather than a guarantee of every opening. Partial detail failures retain existing records and do not infer closures. Synchronization runs once daily through GitHub Actions and can be started manually in Actions. The interface displays per-source success/failure, last scan, active jobs, and first-seen dates. New means first discovered within 7 days, not necessarily newly posted. Missing jobs are marked closed only after a successful scan; failures preserve stale records.
+Public company sources are configured in scripts/sync_jobs.py, scripts/workday.py, and scripts/career_sites.py.
+
+| Company | Public career source |
+| --- | --- |
+| Amgen, Gilead Sciences, Eli Lilly | Workday |
+| Genentech / Roche, Merck / MSD, Bristol Myers Squibb | Workday |
+| Pfizer, Novartis, Neurocrine Biosciences | Workday |
+| Denali Therapeutics | Workday: Discovery, Development, Technical Operations |
+| AbbVie | SmartRecruiters |
+| BioMarin | Jobvite public job pages |
+| Ionis Pharmaceuticals | UKG public board |
+| Arrowhead Pharmaceuticals | Greenhouse |
+| Vir, Glyphic, Kardigan, Alnylam, Praxis, Tessera, Element, Lila | Greenhouse |
+| BioAgilytix, KCAS Bio, Convergent Research | Lever |
+
+Company web endpoints are site-specific and can change or fail. Connection status comes from each actual synchronization result, not from merely configuring a URL. Workday coverage uses mass spectrometry, proteomics, oligonucleotide, analytical, and bioanalytical searches. Other boards retrieve public listings and screen scientific titles and descriptions. This is not a guarantee of every opening or candidate qualification.
+
+Synchronization runs once daily at 15:17 UTC through GitHub Actions and can be started manually in Actions. The interface displays per-source results, last scan, active jobs, and first-seen dates. New means first discovered within 7 days, not necessarily newly posted. Missing jobs are marked closed only after a successful scan; failures and partial detail responses retain existing records as stale. Job IDs and canonical URLs remove duplicate listings.
 
 ## Authorized platform feeds
 
