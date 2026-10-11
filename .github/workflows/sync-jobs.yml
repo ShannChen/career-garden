@@ -2,7 +2,7 @@ name: Sync jobs and publish Career Garden
 on:
   workflow_dispatch:
   schedule:
-    - cron: '17 */6 * * *'
+    - cron: '17 15 * * *'
   push:
     branches: [main]
     paths: ['scripts/**', 'index.html', 'app.js', '.github/workflows/sync-jobs.yml']
