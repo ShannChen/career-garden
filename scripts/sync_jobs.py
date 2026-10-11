@@ -171,17 +171,21 @@ def main():
     now = dt.datetime.now(dt.timezone.utc).isoformat()
     path = ROOT / 'data/jobs.json'
     prior = json.loads(path.read_text()) if path.exists() else {'jobs': []}
-    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as pool:
-        batches = list(pool.map(lambda s: fetch_source(s, now), SOURCES))
     from company_registry import load_companies, fetch_company, coverage_directory
-    with concurrent.futures.ThreadPoolExecutor(max_workers=6) as pool:
-        batches += list(pool.map(lambda c: fetch_company(c,now,get_json,normalize),load_companies(prior.get('sources',[]))))
     from workday import SOURCES as WORKDAY_SOURCES, fetch_workday
-    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
-        batches += list(pool.map(lambda s: fetch_workday(s, now, normalize), WORKDAY_SOURCES))
     from career_sites import smartrecruiters, jobvite, ukg
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
-        batches += list(pool.map(lambda f: f(now, normalize), [smartrecruiters, jobvite, ukg]))
+    def collect(items,workers,fetcher):
+        with concurrent.futures.ThreadPoolExecutor(max_workers=workers) as pool:
+            result=list(pool.map(fetcher,items))
+        print('Checked '+str(len(result))+' public recruiting sources',flush=True)
+        return result
+    # Independent providers run together; each group still limits request volume.
+    with concurrent.futures.ThreadPoolExecutor(max_workers=4) as groups:
+        fixed=groups.submit(collect,SOURCES,4,lambda s:fetch_source(s,now))
+        registry=groups.submit(collect,load_companies(prior.get('sources',[])),6,lambda c:fetch_company(c,now,get_json,normalize))
+        workday=groups.submit(collect,WORKDAY_SOURCES,3,lambda s:fetch_workday(s,now,normalize))
+        other=groups.submit(collect,[smartrecruiters,jobvite,ukg],2,lambda f:f(now,normalize))
+        batches=fixed.result()+registry.result()+workday.result()+other.result()
     batches += [partner_source(n, now) for n in PLATFORMS]
     jobs, statuses = merge(prior.get('jobs', []), batches, now)
     from locations import annotate_location
