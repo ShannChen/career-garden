@@ -6,7 +6,7 @@ Website: https://shannchen.github.io/career-garden/
 
 ## Live company feeds
 
-The GitHub Actions workflow synchronizes configured public Greenhouse and Lever boards every six hours, deduplicates URLs, preserves first-seen dates, and publishes the updated website. Newly discovered means first seen in the last seven days; it is not necessarily a new posting. Missing roles are marked closed only after a successful scan. Failed sources retain last-known records with a stale marker.
+The GitHub Actions workflow synchronizes configured public Greenhouse and Lever boards once daily, deduplicates URLs, preserves first-seen dates, and publishes the updated website. Newly discovered means first seen in the last seven days; it is not necessarily a new posting. Missing roles are marked closed only after a successful scan. Failed sources retain last-known records with a stale marker.
 
 Scientific relevance is automatic keyword screening, not a complete qualification review. The default California filter can show fewer jobs than the total feed. See Search sources for connection results and the last synchronization time.
 
