@@ -84,7 +84,7 @@ def jobvite(now,normalize):
             url=urljoin(base,row['links'][0])
             if not url.startswith('https://jobs.jobvite.com/biomarin/job/'):continue
             try:
-                page=request(url);description=page
+                page=request(url);description=visible_text(page)
                 for block in re.findall(r'<script[^>]*type=["\']application/ld\+json["\'][^>]*>(.*?)</script>',page,re.S|re.I):
                     obj=json.loads(block)
                     for item in (obj if isinstance(obj,list) else [obj]):
@@ -95,3 +95,47 @@ def jobvite(now,normalize):
             time.sleep(.2)
         return jobs,status(key,name,'jobvite',now,len(rows),jobs,failures)
     except Exception as exc:return [],dict(key=key,name=name,provider='jobvite',status='error',checkedAt=now,message=type(exc).__name__+': public board unavailable')
+
+class VisibleText(HTMLParser):
+    def __init__(self):
+        super().__init__();self.hidden=0;self.parts=[]
+    def handle_starttag(self,tag,attrs):
+        if tag in ('script','style'):self.hidden+=1
+    def handle_endtag(self,tag):
+        if tag in ('script','style') and self.hidden:self.hidden-=1
+    def handle_data(self,data):
+        if not self.hidden:self.parts.append(data)
+
+def visible_text(page):
+    parser=VisibleText();parser.feed(page)
+    return ' '.join(parser.parts)
+
+def ukg(now,normalize):
+    name,key='Ionis Pharmaceuticals','ukg:ionis'
+    base='https://recruiting.ultipro.com/ISI1000ISIS/JobBoard/14a66400-68fa-4847-8593-af776328cfd2/'
+    try:
+        rows,offset=[],0
+        while True:
+            payload={'opportunitySearch':{'Top':50,'Skip':offset,'QueryString':'','OrderBy':[{'PropertyName':'PostedDate','Ascending':False}],'Filters':[]}}
+            data=json.loads(request(base+'JobBoardView/LoadSearchResults',payload))
+            batch=data['opportunities'];rows.extend(batch);offset+=len(batch)
+            if offset>=int(data['totalCount']):break
+            if not batch or offset>=5000:raise ValueError('Incomplete listing')
+            time.sleep(.2)
+        jobs,failures=[],0
+        for row in rows:
+            if not SCIENCE_TITLE.search(row.get('Title','')):continue
+            url=base+'OpportunityDetail?opportunityId='+row['Id']
+            try:
+                description=visible_text(request(url))
+                locations=[]
+                for loc in row.get('Locations',[]):
+                    addr=loc.get('Address') or {}
+                    state=addr.get('State') or {};country=addr.get('Country') or {}
+                    locations.append(', '.join(str(x) for x in [addr.get('City'),state.get('Code'),country.get('Code')] if x))
+                job=convert(normalize,name,key,'UKG',row['Title'],description,' / '.join(locations),url,row['Id'],now)
+                if job:job['postedAt']=row.get('PostedDate');jobs.append(job)
+            except Exception:failures+=1
+            time.sleep(.2)
+        return jobs,status(key,name,'ukg',now,len(rows),jobs,failures)
+    except Exception as exc:return [],dict(key=key,name=name,provider='ukg',status='error',checkedAt=now,message=type(exc).__name__+': public board unavailable')
