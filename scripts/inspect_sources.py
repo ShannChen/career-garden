@@ -8,6 +8,8 @@ for row in data['opportunities']:
  if not SCIENCE_TITLE.search(row['Title']):continue
  page=request(base+'OpportunityDetail?opportunityId='+row['Id'])
  text=visible_text(page)
+ for block in re.findall(r'<script[^>]*>(.*?)</script>',page,re.S|re.I):
+  if 'LC-MS' in block:print(json.dumps({'scriptPrefix':block[:1600],'scriptSuffix':block[-800:]}))
  pairs=[]
  for m in re.finditer(r'"([^"\\]+)"\\s*:\\s*("(?:\\\\.|[^"\\\\])*")',page):
   try:
