@@ -1,0 +1,1552 @@
+{
+  "coverage": "Curated US biotech and life-science company universe; not an exhaustive census. Candidate board mappings must pass identity validation before jobs are published.",
+  "companies": [
+    {
+      "id": "eikon-therapeutics",
+      "name": "Eikon Therapeutics",
+      "aliases": [
+        "Eikon Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "eikontherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "insitro",
+      "name": "insitro",
+      "aliases": [
+        "insitro"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "insitro"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "altos-labs",
+      "name": "Altos Labs",
+      "aliases": [
+        "Altos Labs"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "altoslabs"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "calico",
+      "name": "Calico",
+      "aliases": [
+        "Calico"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "calicolabs"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "newlimit",
+      "name": "NewLimit",
+      "aliases": [
+        "NewLimit"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "newlimit"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "recursion",
+      "name": "Recursion",
+      "aliases": [
+        "Recursion"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "recursionpharmaceuticals"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "generate-biomedicines",
+      "name": "Generate Biomedicines",
+      "aliases": [
+        "Generate Biomedicines",
+        "Generate:Biomedicines"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "generatebiomedicines"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "beam-therapeutics",
+      "name": "Beam Therapeutics",
+      "aliases": [
+        "Beam Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "beamtherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "intellia-therapeutics",
+      "name": "Intellia Therapeutics",
+      "aliases": [
+        "Intellia Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "intelliatx",
+        "intelliatherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "prime-medicine",
+      "name": "Prime Medicine",
+      "aliases": [
+        "Prime Medicine"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "primemedicine"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "sana-biotechnology",
+      "name": "Sana Biotechnology",
+      "aliases": [
+        "Sana Biotechnology"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "sanabiotechnology"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "arsenalbio",
+      "name": "ArsenalBio",
+      "aliases": [
+        "ArsenalBio"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "arsenalbio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "artiva-biotherapeutics",
+      "name": "Artiva Biotherapeutics",
+      "aliases": [
+        "Artiva Biotherapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "artivabiotherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "senti-biosciences",
+      "name": "Senti Biosciences",
+      "aliases": [
+        "Senti Biosciences"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "sentibiosciences"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "adicet-bio",
+      "name": "Adicet Bio",
+      "aliases": [
+        "Adicet Bio"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "adicetbio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "century-therapeutics",
+      "name": "Century Therapeutics",
+      "aliases": [
+        "Century Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "centurytherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "elevatebio",
+      "name": "ElevateBio",
+      "aliases": [
+        "ElevateBio"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "elevatebio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "editas-medicine",
+      "name": "Editas Medicine",
+      "aliases": [
+        "Editas Medicine"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "editasmedicine"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "crispr-therapeutics",
+      "name": "CRISPR Therapeutics",
+      "aliases": [
+        "CRISPR Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "crisprtherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "caribou-biosciences",
+      "name": "Caribou Biosciences",
+      "aliases": [
+        "Caribou Biosciences"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "cariboubiosciences"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "scribe-therapeutics",
+      "name": "Scribe Therapeutics",
+      "aliases": [
+        "Scribe Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "scribetherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "metagenomi",
+      "name": "Metagenomi",
+      "aliases": [
+        "Metagenomi"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "metagenomi"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "orna-therapeutics",
+      "name": "Orna Therapeutics",
+      "aliases": [
+        "Orna Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "ornatherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "recode-therapeutics",
+      "name": "ReCode Therapeutics",
+      "aliases": [
+        "ReCode Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "recodetherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "strand-therapeutics",
+      "name": "Strand Therapeutics",
+      "aliases": [
+        "Strand Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "strandtherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "aera-therapeutics",
+      "name": "Aera Therapeutics",
+      "aliases": [
+        "Aera Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "aeratherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "avidity-biosciences",
+      "name": "Avidity Biosciences",
+      "aliases": [
+        "Avidity Biosciences"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "aviditybiosciences"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "dyne-therapeutics",
+      "name": "Dyne Therapeutics",
+      "aliases": [
+        "Dyne Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "dynetherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "entrada-therapeutics",
+      "name": "Entrada Therapeutics",
+      "aliases": [
+        "Entrada Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "entradatherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "pepgen",
+      "name": "PepGen",
+      "aliases": [
+        "PepGen"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "pepgen"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "arcturus-therapeutics",
+      "name": "Arcturus Therapeutics",
+      "aliases": [
+        "Arcturus Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "arcturustherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "stoke-therapeutics",
+      "name": "Stoke Therapeutics",
+      "aliases": [
+        "Stoke Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "stoketherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "wave-life-sciences",
+      "name": "Wave Life Sciences",
+      "aliases": [
+        "Wave Life Sciences"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "wavelifesciences"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "voyager-therapeutics",
+      "name": "Voyager Therapeutics",
+      "aliases": [
+        "Voyager Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "voyagertherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "passage-bio",
+      "name": "Passage Bio",
+      "aliases": [
+        "Passage Bio"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "passagebio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "capsida-biotherapeutics",
+      "name": "Capsida Biotherapeutics",
+      "aliases": [
+        "Capsida Biotherapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "capsidabiotherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "encoded-therapeutics",
+      "name": "Encoded Therapeutics",
+      "aliases": [
+        "Encoded Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "encodedtherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "affinia-therapeutics",
+      "name": "Affinia Therapeutics",
+      "aliases": [
+        "Affinia Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "affiniatherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "4d-molecular-therapeutics",
+      "name": "4D Molecular Therapeutics",
+      "aliases": [
+        "4D Molecular Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "4dmoleculartherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "rocket-pharmaceuticals",
+      "name": "Rocket Pharmaceuticals",
+      "aliases": [
+        "Rocket Pharmaceuticals"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "rocketpharmaceuticals"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "nurix-therapeutics",
+      "name": "Nurix Therapeutics",
+      "aliases": [
+        "Nurix Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "nurix"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "kymera-therapeutics",
+      "name": "Kymera Therapeutics",
+      "aliases": [
+        "Kymera Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "kymeratherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "arvinas",
+      "name": "Arvinas",
+      "aliases": [
+        "Arvinas"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "arvinas"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "c4-therapeutics",
+      "name": "C4 Therapeutics",
+      "aliases": [
+        "C4 Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "c4therapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "ambagon-therapeutics",
+      "name": "Ambagon Therapeutics",
+      "aliases": [
+        "Ambagon Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "ambagontherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "monte-rosa-therapeutics",
+      "name": "Monte Rosa Therapeutics",
+      "aliases": [
+        "Monte Rosa Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "monterosatherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "matchpoint-therapeutics",
+      "name": "Matchpoint Therapeutics",
+      "aliases": [
+        "Matchpoint Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "matchpointtherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "magnet-biomedicine",
+      "name": "Magnet Biomedicine",
+      "aliases": [
+        "Magnet Biomedicine"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "magnetbiomedicine"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "photys-therapeutics",
+      "name": "Photys Therapeutics",
+      "aliases": [
+        "Photys Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "photystherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "tango-therapeutics",
+      "name": "Tango Therapeutics",
+      "aliases": [
+        "Tango Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "tangotherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "ideaya-biosciences",
+      "name": "IDEAYA Biosciences",
+      "aliases": [
+        "IDEAYA Biosciences"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "ideayabiosciences"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "relay-therapeutics",
+      "name": "Relay Therapeutics",
+      "aliases": [
+        "Relay Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "relaytherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "revolution-medicines",
+      "name": "Revolution Medicines",
+      "aliases": [
+        "Revolution Medicines"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "revolutionmedicines"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "rapt-therapeutics",
+      "name": "RAPT Therapeutics",
+      "aliases": [
+        "RAPT Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "rapttherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "antares-therapeutics",
+      "name": "Antares Therapeutics",
+      "aliases": [
+        "Antares Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "antaresrx"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "maze-therapeutics",
+      "name": "Maze Therapeutics",
+      "aliases": [
+        "Maze Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "mazetherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "bicara-therapeutics",
+      "name": "Bicara Therapeutics",
+      "aliases": [
+        "Bicara Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "bicaratherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "scholar-rock",
+      "name": "Scholar Rock",
+      "aliases": [
+        "Scholar Rock"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "scholarrock"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "apellis-pharmaceuticals",
+      "name": "Apellis Pharmaceuticals",
+      "aliases": [
+        "Apellis Pharmaceuticals"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "apellispharmaceuticals"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "akero-therapeutics",
+      "name": "Akero Therapeutics",
+      "aliases": [
+        "Akero Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "akerotherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "89bio",
+      "name": "89bio",
+      "aliases": [
+        "89bio"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "89bio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "septerna",
+      "name": "Septerna",
+      "aliases": [
+        "Septerna"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "septerna"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "ventyx-biosciences",
+      "name": "Ventyx Biosciences",
+      "aliases": [
+        "Ventyx Biosciences"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "ventyxbiosciences"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "sionna-therapeutics",
+      "name": "Sionna Therapeutics",
+      "aliases": [
+        "Sionna Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "sionnatherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "third-harmonic-bio",
+      "name": "Third Harmonic Bio",
+      "aliases": [
+        "Third Harmonic Bio"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "thirdharmonicbio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "abcellera",
+      "name": "AbCellera",
+      "aliases": [
+        "AbCellera"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "abcellera"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "a-alpha-bio",
+      "name": "A-Alpha Bio",
+      "aliases": [
+        "A-Alpha Bio"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "aalphabio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "absci",
+      "name": "Absci",
+      "aliases": [
+        "Absci"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "absci"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "profluent",
+      "name": "Profluent",
+      "aliases": [
+        "Profluent"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "profluent"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "terray-therapeutics",
+      "name": "Terray Therapeutics",
+      "aliases": [
+        "Terray Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "terraytherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "iambic-therapeutics",
+      "name": "Iambic Therapeutics",
+      "aliases": [
+        "Iambic Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "iambictherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "xaira-therapeutics",
+      "name": "Xaira Therapeutics",
+      "aliases": [
+        "Xaira Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "xairatherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "valo-health",
+      "name": "Valo Health",
+      "aliases": [
+        "Valo Health"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "valohealth"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "gandeeva-therapeutics",
+      "name": "Gandeeva Therapeutics",
+      "aliases": [
+        "Gandeeva Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "gandeevatherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "dewpoint-therapeutics",
+      "name": "Dewpoint Therapeutics",
+      "aliases": [
+        "Dewpoint Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "dewpointtherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "cellarity",
+      "name": "Cellarity",
+      "aliases": [
+        "Cellarity"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "cellarity"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "ksq-therapeutics",
+      "name": "KSQ Therapeutics",
+      "aliases": [
+        "KSQ Therapeutics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "ksqtherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "seer",
+      "name": "Seer",
+      "aliases": [
+        "Seer",
+        "Seer, Inc."
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "seerinc",
+        "seer"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "nautilus-biotechnology",
+      "name": "Nautilus Biotechnology",
+      "aliases": [
+        "Nautilus Biotechnology"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "nautilusbiotechnology"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "quantum-si",
+      "name": "Quantum-Si",
+      "aliases": [
+        "Quantum-Si"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "quantumsi25"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "encodia",
+      "name": "Encodia",
+      "aliases": [
+        "Encodia"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "encodia"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "octant",
+      "name": "Octant",
+      "aliases": [
+        "Octant"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "octant"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "standard-biotools",
+      "name": "Standard BioTools",
+      "aliases": [
+        "Standard BioTools"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "standardbio",
+        "standardbiotools"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "parse-biosciences",
+      "name": "Parse Biosciences",
+      "aliases": [
+        "Parse Biosciences"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "parsebiosciences"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "10x-genomics",
+      "name": "10x Genomics",
+      "aliases": [
+        "10x Genomics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "10xgenomics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "ultima-genomics",
+      "name": "Ultima Genomics",
+      "aliases": [
+        "Ultima Genomics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "ultimagenomics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "singular-genomics",
+      "name": "Singular Genomics",
+      "aliases": [
+        "Singular Genomics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "singulargenomics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "watchmaker-genomics",
+      "name": "Watchmaker Genomics",
+      "aliases": [
+        "Watchmaker Genomics"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "watchmakergenomics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "twist-bioscience",
+      "name": "Twist Bioscience",
+      "aliases": [
+        "Twist Bioscience"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "twistbioscience"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "64x-bio",
+      "name": "64x Bio",
+      "aliases": [
+        "64x Bio"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "64xbio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "debut",
+      "name": "Debut",
+      "aliases": [
+        "Debut"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "debutbiotech",
+        "debut"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "lygos",
+      "name": "Lygos",
+      "aliases": [
+        "Lygos"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "lygos"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "geltor",
+      "name": "Geltor",
+      "aliases": [
+        "Geltor"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "geltor"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "modern-meadow",
+      "name": "Modern Meadow",
+      "aliases": [
+        "Modern Meadow"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "modernmeadow"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "perfect-day",
+      "name": "Perfect Day",
+      "aliases": [
+        "Perfect Day"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "perfectday"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "solugen",
+      "name": "Solugen",
+      "aliases": [
+        "Solugen"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "solugen"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "flagship-pioneering-portfolio-board",
+      "name": "Flagship Pioneering (portfolio board)",
+      "aliases": [
+        "Flagship Pioneering (portfolio board)",
+        "Flagship Pioneering"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "flagshippioneeringinc"
+      ],
+      "portfolio": true
+    },
+    {
+      "id": "chan-zuckerberg-biohub",
+      "name": "Chan Zuckerberg Biohub",
+      "aliases": [
+        "Chan Zuckerberg Biohub",
+        "Biohub"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "chanzuckerbergbiohub"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "axle",
+      "name": "Axle",
+      "aliases": [
+        "Axle"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "axle"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "alector",
+      "name": "Alector",
+      "aliases": [
+        "Alector"
+      ],
+      "provider": "lever",
+      "boards": [
+        "alector"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "mammoth-biosciences",
+      "name": "Mammoth Biosciences",
+      "aliases": [
+        "Mammoth Biosciences"
+      ],
+      "provider": "lever",
+      "boards": [
+        "mammothbiosciences"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "cellares",
+      "name": "Cellares",
+      "aliases": [
+        "Cellares"
+      ],
+      "provider": "lever",
+      "boards": [
+        "cellares"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "lyell-immunopharma",
+      "name": "Lyell Immunopharma",
+      "aliases": [
+        "Lyell Immunopharma"
+      ],
+      "provider": "lever",
+      "boards": [
+        "lyell"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "fate-therapeutics",
+      "name": "Fate Therapeutics",
+      "aliases": [
+        "Fate Therapeutics"
+      ],
+      "provider": "lever",
+      "boards": [
+        "fatetherapeutics"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "nkarta",
+      "name": "Nkarta",
+      "aliases": [
+        "Nkarta"
+      ],
+      "provider": "lever",
+      "boards": [
+        "nkartatherapeutics",
+        "nkarta"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "bluerock-therapeutics",
+      "name": "BlueRock Therapeutics",
+      "aliases": [
+        "BlueRock Therapeutics"
+      ],
+      "provider": "lever",
+      "boards": [
+        "bluerocktx"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "enveda",
+      "name": "Enveda",
+      "aliases": [
+        "Enveda"
+      ],
+      "provider": "lever",
+      "boards": [
+        "envedabiosciences"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "ginkgo-bioworks",
+      "name": "Ginkgo Bioworks",
+      "aliases": [
+        "Ginkgo Bioworks"
+      ],
+      "provider": "lever",
+      "boards": [
+        "ginkgobioworks"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "culture-biosciences",
+      "name": "Culture Biosciences",
+      "aliases": [
+        "Culture Biosciences"
+      ],
+      "provider": "lever",
+      "boards": [
+        "culturebiosciences"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "resilience",
+      "name": "Resilience",
+      "aliases": [
+        "Resilience"
+      ],
+      "provider": "lever",
+      "boards": [
+        "resilience"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "nomic",
+      "name": "Nomic",
+      "aliases": [
+        "Nomic"
+      ],
+      "provider": "lever",
+      "boards": [
+        "nomic"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "inscripta",
+      "name": "Inscripta",
+      "aliases": [
+        "Inscripta"
+      ],
+      "provider": "lever",
+      "boards": [
+        "inscripta"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "pivot-bio",
+      "name": "Pivot Bio",
+      "aliases": [
+        "Pivot Bio"
+      ],
+      "provider": "lever",
+      "boards": [
+        "pivotbio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "ossium-health",
+      "name": "Ossium Health",
+      "aliases": [
+        "Ossium Health"
+      ],
+      "provider": "lever",
+      "boards": [
+        "ossiumhealth"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "genalyte",
+      "name": "Genalyte",
+      "aliases": [
+        "Genalyte"
+      ],
+      "provider": "lever",
+      "boards": [
+        "genalyte"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "genbio-ai",
+      "name": "GenBio AI",
+      "aliases": [
+        "GenBio AI"
+      ],
+      "provider": "lever",
+      "boards": [
+        "genbio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "gator-bio",
+      "name": "Gator Bio",
+      "aliases": [
+        "Gator Bio"
+      ],
+      "provider": "lever",
+      "boards": [
+        "gatorbio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "arcadia-science",
+      "name": "Arcadia Science",
+      "aliases": [
+        "Arcadia Science"
+      ],
+      "provider": "lever",
+      "boards": [
+        "arcadiascience"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "5am-ventures-portfolio-board",
+      "name": "5AM Ventures (portfolio board)",
+      "aliases": [
+        "5AM Ventures (portfolio board)",
+        "5AM Ventures"
+      ],
+      "provider": "lever",
+      "boards": [
+        "5amventures"
+      ],
+      "portfolio": true
+    },
+    {
+      "id": "latchbio",
+      "name": "LatchBio",
+      "aliases": [
+        "LatchBio"
+      ],
+      "provider": "ashby",
+      "boards": [
+        "LatchBio",
+        "latchbio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "plasmidsaurus",
+      "name": "Plasmidsaurus",
+      "aliases": [
+        "Plasmidsaurus"
+      ],
+      "provider": "ashby",
+      "boards": [
+        "plasmidsaurus"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "tabula-bio",
+      "name": "Tabula Bio",
+      "aliases": [
+        "Tabula Bio"
+      ],
+      "provider": "ashby",
+      "boards": [
+        "tabulabio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "phylo",
+      "name": "Phylo",
+      "aliases": [
+        "Phylo"
+      ],
+      "provider": "ashby",
+      "boards": [
+        "phylo"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "evolutionaryscale",
+      "name": "EvolutionaryScale",
+      "aliases": [
+        "EvolutionaryScale"
+      ],
+      "provider": "ashby",
+      "boards": [
+        "evolutionaryscale"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "nabla-bio",
+      "name": "Nabla Bio",
+      "aliases": [
+        "Nabla Bio"
+      ],
+      "provider": "ashby",
+      "boards": [
+        "nablabio"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "cradle",
+      "name": "Cradle",
+      "aliases": [
+        "Cradle"
+      ],
+      "provider": "ashby",
+      "boards": [
+        "cradle"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "chai-discovery",
+      "name": "Chai Discovery",
+      "aliases": [
+        "Chai Discovery"
+      ],
+      "provider": "ashby",
+      "boards": [
+        "chai"
+      ],
+      "portfolio": false
+    },
+    {
+      "id": "benchling",
+      "name": "Benchling",
+      "aliases": [
+        "Benchling"
+      ],
+      "provider": "ashby",
+      "boards": [
+        "benchling"
+      ],
+      "portfolio": false
+    }
+  ]
+}
