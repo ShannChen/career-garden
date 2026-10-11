@@ -73,6 +73,8 @@ def normalize(company, provider, board, raw, now):
     city = location.split(',')[0].strip()
     state_match = re.search(r'\b(CA|MA|WA|NJ|NY|NC|PA|TX|CO|MO|KS)\b', location)
     state = state_match.group(1) if state_match else ('CA' if 'California' in location else '')
+    if not state and re.search(r'\b(South San Francisco|San Francisco|San Diego|Carlsbad|La Jolla|San Rafael|Novato|Foster City|Thousand Oaks|Redwood City|Pasadena|Irvine|San Carlos|Santa Monica|Emeryville|Berkeley|Davis|Sacramento)\b', location, re.I):
+        state = 'CA'
     if 'Bay Area' in location and not state:
         state = 'CA'
     tags = [k.upper() if k == 'oligo' else k.title() for k in fields]
