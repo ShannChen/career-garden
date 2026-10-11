@@ -52,7 +52,7 @@ render();
 
 function connectionPanel(){
  const rows=feedInfo?.sources || ['LinkedIn','Indeed','Glassdoor','Handshake'].map(name=>({name,status:'authorization_required'}));
- return '<div class="empty" style="text-align:left"><h2>Data connections</h2><p class="muted">Company APIs synchronize once daily when the scheduled GitHub workflow is enabled. Search links below are separate from data connections.</p>'+rows.map(s=>'<div style="padding:7px 0;border-bottom:1px solid #dfe3d8"><strong>'+esc(s.name)+'</strong> · '+esc({connected:'Connected',error:'Sync failed',authorization_required:'Authorization required'}[s.status]||'Pending')+(s.status==='connected'?' · '+s.matched+' matched roles':'')+'</div>').join('')+'<p class="muted">Platform feeds require a licensed endpoint and credentials configured privately in GitHub Actions. No native platform job-search API is connected.</p></div>';
+ return '<div class="empty" style="text-align:left"><h2>Data connections</h2><p class="muted">Company APIs synchronize once daily when the scheduled GitHub workflow is enabled. Search links below are separate from data connections.</p>'+rows.map(s=>'<div style="padding:7px 0;border-bottom:1px solid #dfe3d8"><strong>'+esc(s.name)+'</strong> · '+esc({connected:'Connected',error:'Sync failed',partial:'Partially synchronized',authorization_required:'Authorization required'}[s.status]||'Pending')+(['connected','partial'].includes(s.status)?' · '+s.matched+' matched roles':'')+'</div>').join('')+'<p class="muted">Platform feeds require a licensed endpoint and credentials configured privately in GitHub Actions. No native platform job-search API is connected.</p></div>';
 }
 async function loadFeed(){
  const note=document.querySelector('.notice');
@@ -64,7 +64,7 @@ async function loadFeed(){
   if(!Array.isArray(data.jobs)||!Array.isArray(data.sources))throw new Error('Invalid feed');
   feedInfo=data;liveJobs=data.jobs;
   const connected=data.sources.filter(s=>s.status==='connected').length;
-  const failed=data.sources.filter(s=>s.status==='error').length;
+  const failed=data.sources.filter(s=>['error','partial'].includes(s.status)).length;
   const active=liveJobs.filter(j=>j.active!==false).length;
   note.textContent='Last synchronization: '+(data.generatedAt?new Date(data.generatedAt).toLocaleString():'Pending first run')+' · '+connected+' sources connected · '+active+' active relevant roles'+(failed?' · '+failed+' sources failed':'')+'. New means first discovered in the last 7 days, not the posting date. Platform authorization status is shown in Search sources.';
   render();
