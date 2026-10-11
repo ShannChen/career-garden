@@ -18,7 +18,6 @@ SOURCES = [
     ('Praxis Precision Medicines', 'greenhouse', 'praxisprecisionmedicines'),
     ('Tessera Therapeutics', 'greenhouse', 'tesseratherapeutics'),
     ('Element Biosciences', 'greenhouse', 'elementbiosciences'),
-    ('Lila Sciences', 'greenhouse', 'lila'),
     ('Arrowhead Pharmaceuticals', 'greenhouse', 'arrowheadpharmacareers'),
     ('BioAgilytix', 'lever', 'bioagilytix'),
     ('KCAS Bio', 'lever', 'kcasbio'),
