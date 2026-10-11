@@ -106,7 +106,7 @@ def fetch_company(company,now,get_json,normalize,discover=True,started=None):
         name=company['name'].split(' (')[0]
         short=re.sub(r'[^a-z0-9]','',name.split()[0].lower())
         case_name=re.sub(r'[^A-Za-z0-9]','',name)
-        boards=list(dict.fromkeys(company['boards']+[compact(name),case_name,short]))[:5]
+        boards=list(dict.fromkeys(company['boards']+[compact(name),case_name,short,company['id']]))[:6]
         providers=list(dict.fromkeys([company.get('configuredProvider',provider),'greenhouse','lever','ashby']))
         for alternative in providers:
             candidates=[b for b in boards if alternative!=provider or b not in company['boards']]
