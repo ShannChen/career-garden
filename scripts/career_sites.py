@@ -110,6 +110,15 @@ def visible_text(page):
     parser=VisibleText();parser.feed(page)
     return ' '.join(parser.parts)
 
+def ukg_description(page,job_id):
+    marker='new US.Opportunity.CandidateOpportunityDetail('
+    start=page.find(marker)
+    if start<0:raise ValueError('Public job detail payload missing')
+    info,_=json.JSONDecoder().raw_decode(page[start+len(marker):].lstrip())
+    if info.get('Id')!=job_id or not info.get('Description'):
+        raise ValueError('Public job detail payload incomplete')
+    return visible_text(info['Description'])
+
 def ukg(now,normalize):
     name,key='Ionis Pharmaceuticals','ukg:ionis'
     base='https://recruiting.ultipro.com/ISI1000ISIS/JobBoard/14a66400-68fa-4847-8593-af776328cfd2/'
@@ -127,7 +136,7 @@ def ukg(now,normalize):
             if not SCIENCE_TITLE.search(row.get('Title','')):continue
             url=base+'OpportunityDetail?opportunityId='+row['Id']
             try:
-                description=visible_text(request(url))
+                description=ukg_description(request(url),row['Id'])
                 locations=[]
                 for loc in row.get('Locations',[]):
                     addr=loc.get('Address') or {}
