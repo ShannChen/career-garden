@@ -1,5 +1,7 @@
 name: Inspect public career-page structure
 on:
+  push:
+    paths: ['scripts/inspect_sources.py', '.github/workflows/inspect-sources.yml']
   workflow_dispatch:
 permissions:
   contents: read
