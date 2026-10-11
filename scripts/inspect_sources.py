@@ -23,8 +23,16 @@ for name,url in PAGES.items():
     if not ('ultipro.com' in script or 'denalitherapeutics.com' in script):continue
     js=text(script)
     snippets=[]
-    for m in re.finditer(r'\.loadUrl|loadUrl:|loadUrl=|getSearchQuery|OpportunitySearchQuery',js,re.I):
+    for m in re.finditer(r'opportunityQuery=new|opportunityQuery=|Candidate.OpportunityQuery|OpportunityQuery=function',js,re.I):
      snippets.append(js[max(0,m.start()-400):m.end()+1800])
      if len(snippets)>=35:break
     if snippets:print(json.dumps({'script':script,'snippets':snippets}))
  except Exception as e:print(json.dumps({'source':name,'error':type(e).__name__}))
+
+try:
+ url=PAGES['ionis']+'JobBoardView/LoadSearchResults'
+ payload={'opportunitySearch':{'Top':50,'Skip':0,'QueryString':'','OrderBy':[{'PropertyName':'PostedDate','Ascending':False}],'Filters':[]}}
+ req=urllib.request.Request(url,data=json.dumps(payload).encode(),headers={'Content-Type':'application/json','User-Agent':'CareerGarden/1.0'})
+ with urllib.request.urlopen(req,timeout=30) as res: data=json.load(res)
+ print(json.dumps({'ionis_response_keys':list(data),'totalCount':data.get('totalCount'),'sample':data.get('opportunities',[])[:1]}))
+except Exception as e:print(json.dumps({'ionis_request_error':str(e)}))
