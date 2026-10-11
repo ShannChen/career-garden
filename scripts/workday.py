@@ -17,6 +17,9 @@ SOURCES = [
     ('Bristol Myers Squibb', 'bristolmyerssquibb.wd5.myworkdayjobs.com', 'bristolmyerssquibb', 'BMS'),
     ('Pfizer', 'pfizer.wd1.myworkdayjobs.com', 'pfizer', 'PfizerCareers'),
     ('Novartis', 'novartis.wd3.myworkdayjobs.com', 'novartis', 'Novartis_Careers'),
+    ('Denali Therapeutics · Discovery', 'dnli.wd1.myworkdayjobs.com', 'dnli', 'Discovery'),
+    ('Denali Therapeutics · Development', 'dnli.wd1.myworkdayjobs.com', 'dnli', 'Development'),
+    ('Denali Therapeutics · Technical Operations', 'dnli.wd1.myworkdayjobs.com', 'dnli', 'Technical_Operations_Manufacturing'),
     ('Neurocrine Biosciences', 'neurocrine.wd5.myworkdayjobs.com', 'neurocrine', 'Neurocrinecareers'),
 ]
 QUERIES = ['mass spectrometry', 'proteomics', 'oligonucleotide', 'analytical', 'bioanalytical']
@@ -34,7 +37,7 @@ def request_json(url, payload=None):
 
 def fetch_workday(source, now, normalize):
     company, host, tenant, board = source
-    key = 'workday:' + tenant
+    key = 'workday:' + tenant + (':' + board if tenant == 'dnli' else '')
     base = f'https://{host}/wday/cxs/{tenant}/{board}'
     found, jobs, failures = {}, [], 0
     try:
