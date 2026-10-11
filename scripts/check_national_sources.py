@@ -1,9 +1,11 @@
 """Offline integrity checks for national company coverage."""
 from company_registry import fetch_company, coverage_directory
 from locations import annotate_location
-from sync_jobs import normalize, merge
+from sync_jobs import normalize, merge, classify
 
 def run():
+    assert classify('Scientist, RNA Biology','RNA biology and strong analytical thinking') is None
+    assert classify('Scientist, Oligonucleotide Analysis','RNA characterization using HPLC')
     company=dict(id='example',name='Example Bio',aliases=['Example Bio'],provider='greenhouse',boards=['wrong','right'])
     def fixture(url):
         if '/wrong' in url:return dict(name='Unrelated Inc')
