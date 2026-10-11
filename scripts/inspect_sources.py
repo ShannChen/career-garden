@@ -8,4 +8,11 @@ for row in data['opportunities']:
  if not SCIENCE_TITLE.search(row['Title']):continue
  page=request(base+'OpportunityDetail?opportunityId='+row['Id'])
  text=visible_text(page)
+ pairs=[]
+ for m in re.finditer(r'"([^"\\]+)"\\s*:\\s*("(?:\\\\.|[^"\\\\])*")',page):
+  try:
+   value=json.loads(m.group(2))
+   if len(value)>200:pairs.append({'key':m.group(1),'length':len(value),'preview':value[:100]})
+  except ValueError:pass
+ print(json.dumps({'title':row['Title'],'longStringFields':pairs[:15]}))
  print(json.dumps({'title':row['Title'],'visibleLength':len(text),'titleVisible':row['Title'] in text,'msInPage':bool(re.search('mass spectrometr|LC-MS',page,re.I)),'msVisible':bool(re.search('mass spectrometr|LC-MS',text,re.I)),'snippets':[page[max(0,m.start()-100):m.end()+500] for m in list(re.finditer('LongDescription|mass spectrometr|LC-MS',page,re.I))[:3]]}))
