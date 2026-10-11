@@ -18,6 +18,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: main
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
@@ -36,10 +38,15 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          snapshot=$(mktemp)
+          cp data/jobs.json "$snapshot"
+          git restore data/jobs.json
+          git pull --rebase origin main
+          cp "$snapshot" data/jobs.json
+          rm "$snapshot"
           git add data/jobs.json
           if ! git diff --cached --quiet; then
             git commit -m 'Update synchronized job records'
-            git pull --rebase origin main
             git push
           fi
       - name: Stage public website
