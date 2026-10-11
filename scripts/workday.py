@@ -12,6 +12,12 @@ SOURCES = [
     ('Amgen', 'amgen.wd1.myworkdayjobs.com', 'amgen', 'Careers'),
     ('Gilead Sciences', 'gilead.wd1.myworkdayjobs.com', 'gilead', 'gileadcareers'),
     ('Eli Lilly', 'lilly.wd115.myworkdayjobs.com', 'lilly', 'LLY'),
+    ('Genentech / Roche', 'roche.wd3.myworkdayjobs.com', 'roche', 'ROG-A2O-GENE'),
+    ('Merck / MSD', 'msd.wd5.myworkdayjobs.com', 'msd', 'SearchJobs'),
+    ('Bristol Myers Squibb', 'bristolmyerssquibb.wd5.myworkdayjobs.com', 'bristolmyerssquibb', 'BMS'),
+    ('Pfizer', 'pfizer.wd1.myworkdayjobs.com', 'pfizer', 'PfizerCareers'),
+    ('Novartis', 'novartis.wd3.myworkdayjobs.com', 'novartis', 'Novartis_Careers'),
+    ('Neurocrine Biosciences', 'neurocrine.wd5.myworkdayjobs.com', 'neurocrine', 'Neurocrinecareers'),
 ]
 QUERIES = ['mass spectrometry', 'proteomics', 'oligonucleotide', 'analytical', 'bioanalytical']
 
