@@ -487,7 +487,8 @@
       "id": "nurix-therapeutics",
       "name": "Nurix Therapeutics",
       "aliases": [
-        "Nurix Therapeutics"
+        "Nurix Therapeutics",
+        "Nurix"
       ],
       "provider": "greenhouse",
       "boards": [
@@ -945,10 +946,12 @@
       "id": "nautilus-biotechnology",
       "name": "Nautilus Biotechnology",
       "aliases": [
-        "Nautilus Biotechnology"
+        "Nautilus Biotechnology",
+        "Nautilus"
       ],
       "provider": "greenhouse",
       "boards": [
+        "nautilus",
         "nautilusbiotechnology"
       ],
       "portfolio": false
@@ -1286,7 +1289,8 @@
       "id": "enveda",
       "name": "Enveda",
       "aliases": [
-        "Enveda"
+        "Enveda",
+        "Enveda Biosciences"
       ],
       "provider": "lever",
       "boards": [
