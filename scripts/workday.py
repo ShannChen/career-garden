@@ -9,6 +9,10 @@ import urllib.request
 from urllib.parse import urlsplit
 
 SOURCES = [
+    ('Takeda', 'takeda.wd3.myworkdayjobs.com', 'takeda', 'External'),
+    ('Regeneron', 'regeneron.wd1.myworkdayjobs.com', 'regeneron', 'Careers'),
+    ('Moderna', 'modernatx.wd1.myworkdayjobs.com', 'modernatx', 'M_tx'),
+    ('Biogen', 'biibhr.wd3.myworkdayjobs.com', 'biibhr', 'external'),
     ('Amgen', 'amgen.wd1.myworkdayjobs.com', 'amgen', 'Careers'),
     ('Gilead Sciences', 'gilead.wd1.myworkdayjobs.com', 'gilead', 'gileadcareers'),
     ('Eli Lilly', 'lilly.wd115.myworkdayjobs.com', 'lilly', 'LLY'),
