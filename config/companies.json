@@ -1552,6 +1552,20 @@
         "benchling"
       ],
       "portfolio": false
+    },
+    {
+      "id": "lila-sciences",
+      "name": "Lila Sciences",
+      "aliases": [
+        "Lila Sciences"
+      ],
+      "provider": "greenhouse",
+      "boards": [
+        "lilasciences",
+        "lila"
+      ],
+      "portfolio": false,
+      "legacyKey": "greenhouse:lila"
     }
   ]
 }
